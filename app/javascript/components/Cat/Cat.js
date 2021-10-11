@@ -4,6 +4,7 @@ import axios from 'axios';
 import Header from './Header';
 import Review from './Review';
 import ReviewForm from './ReviewForm';
+import './Cat.scss';
 
 const Cat = (props) => {
   const [cat, setCat] = useState({});
@@ -43,21 +44,21 @@ const Cat = (props) => {
     <div>
         {
           loaded &&
-          <Fragment>
-          <div className="column">
-              <Header 
-              attributes={cat.data.attributes}
-              reviews={cat.included}
-              />
-            <div className="reviews">
-              [reviews will go here]
-            </div>
+          <div className="column-wrapper">
+              <div className="column">
+                  <Header 
+                  attributes={cat.data.attributes}
+                  reviews={cat.included}
+                  />
+                <div className="reviews">
+                  [reviews will go here]
+                </div>
+              </div>
+              <div className="column">
+                <ReviewForm 
+                />
+              </div>
           </div>
-          <div className="column">
-            <ReviewForm 
-            />
-          </div>
-          </Fragment>
       }
     </div>
     )

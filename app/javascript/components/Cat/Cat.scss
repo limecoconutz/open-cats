@@ -1,0 +1,33 @@
+@import '../../stylesheets/colors.scss';
+@import '../../stylesheets/fonts.scss';
+
+.column-wrapper {
+  padding: 8px;
+}
+
+.column {
+    max-width: 50%;
+    width: 50%;
+    float: left;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow: scroll;
+}
+
+.cat-card {
+  background-position: center;
+  background-size: cover;
+  border-radius: 15%;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.cat-title {
+  text-align: center;
+    padding: 8px;
+    font-size: 2rem;
+    color: $mint-cream;
+    background-color: $middle-green;
+}

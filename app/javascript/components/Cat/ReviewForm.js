@@ -1,8 +1,9 @@
 import React from "react";
+import './ReviewForm.scss';
 
 const ReviewForm = (props) => {
   return(
-    <div className="wrapper">
+    <div className="form-wrapper">
       <form>
         <div>Have an experience with this [cat]? Share your thoughts</div>
         <div className="field">

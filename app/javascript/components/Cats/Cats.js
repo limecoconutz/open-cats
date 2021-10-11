@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import CatBox from './CatBox';
+import './Cats.scss';
 
 const Cats = () => {
   const [cats, setCats] = useState([]);

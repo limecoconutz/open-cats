@@ -1,0 +1,12 @@
+@import '../stylesheets/colors.scss';
+@import '../stylesheets/fonts.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+/*   height: 100vh; */
+  background-image: $almost-white-gradient;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

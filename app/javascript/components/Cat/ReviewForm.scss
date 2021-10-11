@@ -1,0 +1,43 @@
+@import '../../stylesheets/colors.scss';
+@import '../../stylesheets/fonts.scss';
+
+.form-wrapper {
+  background-color: $blue-sapphire;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 16px;
+  margin: auto;
+  color: $mint-cream;
+}
+
+.field {
+    padding: 16px;
+    background-color: $mint-cream;
+    color: $blue-sapphire;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field input {
+  padding: 28px;
+  width: 80%;
+  margin: auto;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid $middle-green;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 2rem;
+  margin: 16px;
+  height: 50px;
+  background-color: $candy-pink;
+  color: $mint-cream;
+  border-radius: 15px;
+  border: solid 1px $candy-pink;
+}
