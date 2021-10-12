@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import Header from './Header';
 import ReviewForm from './ReviewForm';
@@ -19,10 +20,10 @@ const Cat = (props) => {
           setLoaded(true);
         })
         .catch(res => console.log(res));
-  }, []);
-
-  return(
-    <div>
+      }, []);
+      
+      return(
+        <div>
         {
           loaded &&
           <div className="column-wrapper">
@@ -31,6 +32,7 @@ const Cat = (props) => {
                   attributes={cat.data.attributes}
                   reviews={cat.included}
                   />
+            <div className="link-btn-home"><Link to={`/`}>Back</Link></div>
               </div>
               <div className="column">
                 <ReviewForm attributes={cat.data.attributes} reviews={cat.included}

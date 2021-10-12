@@ -3,7 +3,6 @@
 
 .reviews-box {
   width: 100%;
-  height: 50vh;
 }
 
 .reviews-wrapper{
@@ -35,4 +34,22 @@
   width: fit-content;
   padding-top: 12px;
   margin-top: 6px;
+}
+
+.link-btn-home {
+  a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    color: $mint-cream;
+  }
+  color: $mint-cream;
+  background-color: $blue-sapphire;
+  width: 63px;
+  border-radius: 15px;
+  padding: 6px;
+  &:hover{
+    transition: 200ms ease-in-out;
+    background-color: $middle-green;
+  }
 }
