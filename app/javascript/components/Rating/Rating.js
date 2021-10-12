@@ -1,4 +1,5 @@
 import React from 'react';
+import './Rating.scss';
 
 const Rating = ({score}) => {
   const avg = (score/5) *100;

@@ -2,7 +2,6 @@ import React, { useState, useEffect, Fragment } from 'react';
 import axios from 'axios';
 
 import Header from './Header';
-import Review from './Review';
 import ReviewForm from './ReviewForm';
 import './Cat.scss';
 
@@ -20,25 +19,7 @@ const Cat = (props) => {
           setLoaded(true);
         })
         .catch(res => console.log(res));
-     // const currentCat = await axios.get(url);
-     // console.log(currentCat.data);
-     // setCat(currentCat.data);
-     // setLoaded(true);
   }, []);
-
-  // let reviews;
-  // if (cat.data.included.length > 0) {
-  //   reviews = cat.included.map( (review, index) => {
-  //     return (
-  //       <Review 
-  //         key={index} 
-  //         title={review.attributes.title} 
-  //         description={review.attributes.description} 
-  //         score={review.attributes.score} 
-  //       />
-  //     )
-  //   })
-  // }
 
   return(
     <div>
@@ -50,12 +31,9 @@ const Cat = (props) => {
                   attributes={cat.data.attributes}
                   reviews={cat.included}
                   />
-                <div className="reviews">
-                  [reviews will go here]
-                </div>
               </div>
               <div className="column">
-                <ReviewForm 
+                <ReviewForm attributes={cat.data.attributes}
                 />
               </div>
           </div>

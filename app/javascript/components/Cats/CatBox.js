@@ -5,9 +5,6 @@ const CatBox = ({attributes}) => {
   const {name, image_url, slug} = attributes;
   return(
     <div className="card" style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),  url(${image_url})`}}>
-{/*         <div className="cat-logo">
-              <img src={image_url} alt={name} width="50"/>
-        </div> */}
         <div className="cat-details">
               <div className="cat-name">
                 {name}

@@ -1,11 +1,11 @@
 import React from "react";
 import './ReviewForm.scss';
 
-const ReviewForm = (props) => {
+const ReviewForm = ({attributes}) => {
   return(
     <div className="form-wrapper">
       <form>
-        <div>Have an experience with this [cat]? Share your thoughts</div>
+        <div>Have an experience with {attributes.name}? Share your thoughts</div>
         <div className="field">
           <input type="text" name="title" placeholder="Review Title"/>
           <input type="description" name="description" placeholder="Review Description"/>
