@@ -34,7 +34,7 @@ Cat.create([
 ]);
 
 cat = Cat.first;
-cat.reviews.createcat.reviews.create([
+cat.reviews.create([
   {
     title: 'cool cat',
     description:'I had fun with this cool, crazy cat',

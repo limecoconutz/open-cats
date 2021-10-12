@@ -1,8 +1,11 @@
 import React from 'react';
 import Review from './Review';
+import Rating from '../Rating/Rating';
+import './Review.scss';
 
 const Header = ({attributes, reviews}) => {
   const {name, image_url, avg_score} = attributes;
+  console.log(attributes);
   const total = reviews.length;
 
   let reviewsArr;
@@ -20,13 +23,14 @@ const Header = ({attributes, reviews}) => {
     }
   return(
     <div className="wrapper" >
-      <h1 className="cat-title">{name}</h1>
+      <h1 className="cat-title"><i className="fas fa-paw"></i> {name}</h1>
       <section className="cat-card" style={{backgroundImage: `url(${image_url})`}}>
       </section>
-      <div>
+      <div className="reviews-wrapper">
         <div className="totalReviews">{total} reviews</div>
-        <div className="starRating"></div>
-        <div className="totalOutOf">{avg_score} out of 5</div>
+        <div className="starRating">
+        <Rating score={avg_score}/>
+        </div>
       </div>
       <div className="reviews-box">
         <div>{reviewsArr}</div>

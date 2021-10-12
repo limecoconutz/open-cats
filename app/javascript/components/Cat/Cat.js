@@ -33,7 +33,7 @@ const Cat = (props) => {
                   />
               </div>
               <div className="column">
-                <ReviewForm attributes={cat.data.attributes}
+                <ReviewForm attributes={cat.data.attributes} reviews={cat.included}
                 />
               </div>
           </div>
