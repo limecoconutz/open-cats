@@ -1,18 +1,20 @@
 import React from "react";
+import Rating from '../Rating/Rating';
 import './ReviewForm.scss';
 
-const ReviewForm = (props) => {
+const ReviewForm = ({attributes, reviews}) => {
   return(
     <div className="form-wrapper">
       <form>
-        <div>Have an experience with this [cat]? Share your thoughts</div>
+        <div>Have an experience with {attributes.name}? Share your thoughts</div>
         <div className="field">
           <input type="text" name="title" placeholder="Review Title"/>
           <input type="description" name="description" placeholder="Review Description"/>
           <div className="field">
               <div className="rating-container">
                 <div className="rating-title-text">Rate This Cat</div>
-                [Star Rating Goes Here]
+                {console.log(reviews.length)}
+                <Rating score={reviews.length}/>
               </div>
           </div>
         </div>

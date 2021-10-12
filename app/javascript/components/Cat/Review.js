@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Rating from '../Rating/Rating';
 
 const Review = ({description, title, score}) => {
   return (
@@ -10,7 +11,7 @@ const Review = ({description, title, score}) => {
         {description}
       </div>
       <div className="review-rating">
-        {score}
+        <Rating score={score}/>
       </div>
     </div>
   )
