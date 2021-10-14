@@ -11,9 +11,9 @@
     float: left;
     height: 100vh;
     overflow-x: scroll;
-    overflow-y: scroll;
-    overflow: scroll;
-}
+    // overflow-y: scroll;
+    // overflow: scroll;
+  }
 
 .cat-card {
   background-position: center;
@@ -31,4 +31,24 @@
     font-size: 2rem;
     color: $mint-cream;
     background-color: $middle-green;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $mint-cream;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $blue-sapphire;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $candy-pink;
 }
