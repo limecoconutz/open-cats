@@ -14,22 +14,24 @@
 }
 
 .field {
+    border-radius: 25px;
     padding: 16px;
-    background-color: $mint-cream;
-    color: $blue-sapphire;
+    color: $mint-cream;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.field input {
-  padding: 28px;
-  width: 80%;
-  margin: auto;
-  height: 40px;
-  border-radius: 15px;
-  border: 1px solid $middle-green;
-  margin-top: 10px;
+.field {
+  .input-form{
+    padding: 28px;
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid $middle-green;
+    margin-top: 10px;
+  }
 }
 
 button {
@@ -40,4 +42,14 @@ button {
   color: $mint-cream;
   border-radius: 15px;
   border: solid 1px $candy-pink;
+}
+
+.rating-container {
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 40px 0 10px 0;
+  cursor: pointer;
+  margin: auto;
+  width: 70%;
 }

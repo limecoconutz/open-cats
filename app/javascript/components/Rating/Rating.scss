@@ -1,10 +1,14 @@
+@import '../../stylesheets/colors.scss';
+@import '../../stylesheets/fonts.scss';
+
 .rating-wrapper {
   position: relative;
   display: inline-block;
+  color: $mint-cream;
 }
 
 .rating {
-  color: #fcc201;
+  color: $jonquil;
   position: absolute;
   top: 0;
   left: 0;
