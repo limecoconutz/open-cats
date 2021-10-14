@@ -8,7 +8,7 @@ const CatBox = ({attributes}) => {
     <div className="card" style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),  url(${image_url})`}}>
         <div className="cat-details">
               <div className="cat-name">
-                {name}
+                <h2>{name}</h2>
               </div>
               <Rating score={avg_score} />
               <div className="link-wrapper">

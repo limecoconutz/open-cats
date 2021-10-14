@@ -10,3 +10,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+h1, h2, h3 {
+  font-family: $headers-font;
+}
+
+p, a {
+  font-family: $body-font;
+}

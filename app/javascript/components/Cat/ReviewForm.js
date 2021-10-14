@@ -53,14 +53,14 @@ const ReviewForm = ({attributes, handleChange, handleSubmit, review, setRating})
     <div className="form-wrapper">
       <form>
         <div style={{textAlign: 'center', paddingBottom: '10px'}}>
-          Have an experience with {attributes.name}? Share your thoughts
+          <h2>Have an experience with {attributes.name}? Share your thoughts</h2>
         </div>
         <div className="field">
           <input className="input-form" onChange={handleChange} value={review.title }type="text" name="title" placeholder="Review Title"/>
           <input className="input-form" onChange={handleChange} value={review.description }type="description" name="description" placeholder="Review Description"/>
           <div className="field">
               <div className="rating-container">
-              <div className="rating-title-text">Rate this cat</div>
+              <div className="rating-title-text"><p>Rate this cat</p></div>
                 <RatingBox>
                   {ratingOptions}
                 </RatingBox>

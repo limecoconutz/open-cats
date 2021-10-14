@@ -26,7 +26,7 @@ const Header = ({attributes, reviews}) => {
       <section className="cat-card" style={{backgroundImage: `url(${image_url})`}}>
       </section>
       <div className="reviews-wrapper">
-        <div className="totalReviews">{total} reviews</div>
+        <div className="totalReviews"><p>{total} reviews</p></div>
         <div className="starRating">
         <Rating score={avg_score}/>
         </div>

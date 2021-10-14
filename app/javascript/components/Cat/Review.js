@@ -5,10 +5,10 @@ const Review = ({description, title, score}) => {
   return (
     <div className="review-card">
         <div className="review-title">
-        {title}
+        <h3>{title}</h3>
       </div>
       <div className="review-description">
-        {description}
+        <p>{description}</p>
       </div>
       <div className="review-rating">
         <Rating score={score}/>
