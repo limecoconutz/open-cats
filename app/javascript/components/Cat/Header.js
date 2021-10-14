@@ -5,7 +5,6 @@ import './Review.scss';
 
 const Header = ({attributes, reviews}) => {
   const {name, image_url, avg_score} = attributes;
-  console.log(attributes);
   const total = reviews.length;
 
   let reviewsArr;
