@@ -12,7 +12,7 @@
       padding: 12px;
 }
 .review-card {
-  border: solid 1px $middle-green;
+  border: solid 0.7px $middle-green;
   border-radius: 15px;
   width: 80%;
   min-height: 100px;
@@ -20,6 +20,7 @@
   padding: 8px;
   margin: auto;
   margin-top: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .review-title {
